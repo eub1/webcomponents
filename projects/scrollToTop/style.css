@@ -45,7 +45,7 @@ p {
   display: block;
   height: calc(100% - 15px);
   width: calc(100% - 15px);
-  background-color: ghostwhite;
+  background-color: #f8f8ff;
   border-radius: 50%;
   display: grid;
   place-items: center;
