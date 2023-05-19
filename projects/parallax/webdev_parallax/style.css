@@ -22,6 +22,7 @@ header {
   /* all the elements must be behind the lorem text */
   z-index: -1;
 }
+
 .background {
   transform: translateZ(-10px) scale(2);
 }
