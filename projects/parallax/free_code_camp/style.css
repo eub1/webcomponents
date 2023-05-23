@@ -24,7 +24,7 @@ h2 {
 }
 
 div:nth-child(1) {
-  background-image: url(../imgs/mtorre.jpg);
+  background-image: url(../../imgs/mtorre.jpg);
   background-size: cover;
 }
 
@@ -37,7 +37,7 @@ div:nth-child(2) {
 
 div:nth-child(3) {
   position: sticky;
-  background-image: url(../imgs/removebg.png);
+  background-image: url(../../imgs/removebg.png);
   background-attachment: fixed;
   background-size: cover;
   background-position: 25% 55%;
