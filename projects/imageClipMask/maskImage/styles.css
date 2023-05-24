@@ -1,0 +1,46 @@
+body {
+  background-color: rgb(36, 25, 36);
+  color: aliceblue;
+  position: relative;
+}
+.hero {
+  position: relative;
+  min-height: 50vh;
+  margin-block-end: 5rem;
+}
+.hero-title {
+  color: hsl(177, 46%, 65%);
+  font-size: clamp(2.5rem, 10vw + 0.54rem, 6rem);
+  line-height: 1;
+  font-weight: 900;
+  text-transform: uppercase;
+  position: relative;
+  /* so text is infront of the img with position absolute. 2nd option, in html first write img tag, then h1 */
+  z-index: 2;
+}
+
+.hero-image {
+  /* mask Image, use black cause use an alpha color */
+  /* -webkit-mask-image: linear-gradient(black, transparent);
+  mask-image: linear-gradient(black, transparent); */
+  /* playing with position absolute */
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  /* step 2 */
+  width: 100%;
+  height: 50vh;
+  object-fit: cover;
+  /* step 3 play width gradients */
+  -webkit-mask-image: linear-gradient(
+    rgb(0 0 0 / 1),
+    rgb(0 0 0 / 0.5) 70%,
+    /* 10% starts darker up */ rgb(0 0 0 / 0)
+  );
+  mask-image: linear-gradient(
+    rgb(0 0 0 / 1),
+    rgb(0 0 0 / 0.5) 70%,
+    rgb(0 0 0 / 0)
+  );
+}

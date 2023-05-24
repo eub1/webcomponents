@@ -1,0 +1,44 @@
+// saas
+
+// using INSET -> sliding door effect
+
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200&display=swap');
+
+body {
+  background: #dcf5ff;
+  margin: 0;
+  height: 100vh;
+  display: grid;
+  justify-items: center;
+  align-items: center;
+  font-family: 'Nunito', sans-serif;
+}
+
+.container {
+  width: 30%;
+  background: ghostwhite;
+  border-radius: 10px;
+
+  .inner {
+    background: #a5eed6;
+    padding: 1em;
+    border-radius: 10px;
+    width: calc(100% - 2em);
+    /*clip path*/
+    clip-path: inset(0% 0% 0% 100%);
+    transition: all 0.5s ease-in-out;
+    cursor: pointer;
+
+    h1 {
+      color: ghostwhite;
+      margin: 0;
+    }
+    p {
+      color: ghostwhite;
+      font-size: 0.8rem;
+    }
+  }
+  &:hover .inner {
+    clip-path: inset(0% 0% 0% 0%);
+  }
+}
